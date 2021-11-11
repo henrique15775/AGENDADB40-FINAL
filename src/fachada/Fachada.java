@@ -3,8 +3,6 @@ package fachada;
  * IFPB - Curso Superior de Tec. em Sist. para Internet
  * Programação Orientada a Objetos
  * Prof. Fausto Maranhão Ayres
- * Grupo: Glauco Simões & Renato Silva
- * Setembro 021
  **********************************/
 
 import java.time.Duration;

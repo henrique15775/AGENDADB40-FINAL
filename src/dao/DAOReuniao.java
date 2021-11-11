@@ -28,6 +28,7 @@ public class DAOReuniao extends DAO<Reuniao>{
 	
 	//Consultas
 	
+	
 	public List<Reuniao> readByDigitos(String digitos) {
 		Query q = manager.query();
 		q.constrain(Reuniao.class);
@@ -37,29 +38,7 @@ public class DAOReuniao extends DAO<Reuniao>{
 	}
 	
 	public List<Participante> readByData(String nome, int mes) {
-		/*
-		 	
-		ArrayList<Participante> reuniaoP = new ArrayList<Participante>();
 		
-		Participante p = daoparticipante.read(nome); //localizarParticipante
-		if (p==null)
-					throw new Exception("Participante " + nome + " nao cadastrado(a)");
-		
-		System.out.println(String.valueOf(mes));
-		List<Reuniao> reuniaoMes = daoreuniao.readAll();
-	
-		
-		for(Reuniao r: reuniaoMes) {
-			LocalDateTime data = r.getDatahora();
-			int month = data.getMonthValue();
-			if(r.localizarParticipante(nome) != null && month==mes) {
-				reuniaoP.addAll(r.getParticipantes());
-			}
-		}
-		
-		return reuniaoP;
-		 
-		 */
 		Query q = manager.query();
 		q.constrain(Reuniao.class);
 		System.out.println(String.valueOf(mes));

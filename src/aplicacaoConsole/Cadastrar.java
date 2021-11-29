@@ -56,9 +56,9 @@ public class Cadastrar {
 			nomes = new ArrayList<>();
 			nomes.add("joao");
 			nomes.add("maria");
-			//nomes.add("jose");
+			nomes.add("jose");
 			nomes.add("ana");
-			//nomes.add("paulo");
+			nomes.add("paulo");
 			r = Fachada.criarReuniao("02/12/2021 10:00", "assunto7", nomes);
 		} 
 		catch (Exception e) {

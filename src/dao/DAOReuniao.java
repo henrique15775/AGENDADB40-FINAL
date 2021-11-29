@@ -48,7 +48,7 @@ public class DAOReuniao extends DAO<Reuniao>{
 		for(Reuniao r: reunioes) {
 			LocalDateTime data = r.getDatahora();
 			int month = data.getMonthValue();
-			if(r.localizarParticipante(nome) != null && month==mes) {
+			if(r.localizarParticipante(nome) == null && month==mes) {
 				reunioes_com_participante.addAll(r.getParticipantes());
 			}
 		}
